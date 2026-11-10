@@ -1,0 +1,53 @@
+Final Python Project Announcement
+Dear Students,
+
+For your final project, you will work in groups of 5 students to develop a Python application that solves a real-life problem.
+
+You may choose one of the 15 suggested topics or propose your own idea with instructor approval.
+
+Please review the attached Final Python Project Guidelines carefully for the project requirements, suggested topics, submission instructions, and grading rubric.
+
+COSC111_Final_Python_Project_Guidelines-1.pdfDownload COSC111_Final_Python_Project_Guidelines-1.pdf
+
+Project Information
+
+Group size: 5 students
+
+Presentation duration: 8–10 minutes per group
+
+Total score: 20 points
+
+All group members must participate in the presentation.
+
+Presentation Schedule
+
+Monday, November 30, 2026
+
+Wednesday, December 2, 2026
+
+Groups may volunteer to present first. If there are no volunteers, the presentation order will be selected randomly by the instructor.
+
+Submission Requirements
+
+Each group must submit one ZIP file containing:
+
+Python source code (.py files)
+
+Presentation slides (PPTX or PDF)
+
+Video demonstration (3–5 minutes)
+
+README.txt with instructions and member contributions
+
+Note: If your video file is too large, you may upload it to YouTube (Unlisted), Google Drive, or OneDrive instead. Include the video link in your README.txt file and ensure that the instructor can access it without requesting permission.
+
+Only one member needs to submit the ZIP file on behalf of the group.
+
+Important: Your Python application and presentation slides must be ready on your scheduled presentation day. 
+
+Submission Deadline: Friday, December 4, 2026, at 11:59 PM.
+
+Please ensure that all group members understand the program and are prepared to explain their contributions.
+
+Best regards,
+Taingliv MIN

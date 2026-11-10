@@ -1,0 +1,81 @@
+SMART PARKING MANAGEMENT SYSTEM
+C++ Group Project - Project Description
+
+Group members:
+  Member 1: ____________________
+  Member 2: ____________________
+  Member 3: ____________________
+
+===============================================================
+1. PROJECT DESCRIPTION
+===============================================================
+Smart Parking Management System helps a parking attendant run a
+small parking lot. Tracking which spaces are free, where each
+vehicle is, and how much each driver owes is slow and error-prone
+on paper. Our program does this automatically and blocks common
+mistakes, such as parking the same plate twice.
+
+We built two versions:
+
+A) Console version (main project) - folder 1_Console_Version
+   A text-menu program for a lot with 10 spaces. The user can
+   park a vehicle (bike or car), remove it and get a receipt with
+   the fee, show the whole lot, search for a plate, and advance a
+   simple clock to simulate time passing.
+   Fees: bike $0.50 per hour, car $1.50 per hour, minimum 1 hour.
+
+B) GUI edition "Smart Parking PRO" (bonus) - folder 2_GUI_Version
+   A Windows window built on the same ideas, with:
+   - 30 spaces in 3 zones, each on its own tab:
+     Standard (x1.0), Premium (x1.5) and VIP (x2.0)
+   - choose your own space by clicking it, or let the program
+     pick the cheapest free space you are allowed to use
+   - membership plans: Guest, Silver (10% off), Gold (20% off,
+     VIP access), Platinum (30% off, VIP access, 1st hour free);
+     pick a plan, then press Apply; members can be removed
+   - receipts, live "due now" fees, income totals and animations
+
+Programming concepts used:
+  - Classes: ParkingLot (both versions) and MemberList (GUI),
+    with private data and public member functions.
+  - Arrays: parallel arrays (occupied, plates, types, entryHour);
+    index i in each array describes the same space.
+  - Loops: for loops to search the spaces (linear search),
+    nested loops to find the cheapest space, a while loop for
+    the menu.
+  - Conditions: input validation, fee rates, the 1-hour minimum,
+    VIP rules and menu choices.
+  - Functions: one function for each job.
+  - Console version uses only <iostream> and <string>.
+    The GUI also uses <windows.h>, which comes with Windows.
+
+===============================================================
+2. HOW TO RUN (Windows with MinGW g++)
+===============================================================
+Console: double-click 1_Console_Version\run_console.bat
+         (or: g++ SmartParking.cpp -o SmartParking.exe)
+GUI:     double-click 2_GUI_Version\run_gui.bat
+         (or: g++ SmartParkingPro.cpp -o SmartParkingPro.exe -mwindows -lgdi32)
+
+Type vehicle types in lowercase: bike or car.
+Data is not saved to a file: closing the program empties the lot.
+
+===============================================================
+3. MEMBER CONTRIBUTIONS
+===============================================================
+Member 1 - Class structure and display
+  Console: designed the ParkingLot class and its parallel arrays,
+  the constructor, findFree(), findByPlate() and showLot().
+  GUI: the parking lot drawing, space cards and zone tabs.
+
+Member 2 - Parking logic and fees
+  Console: isValidType(), getRate(), park() with its three checks,
+  remove() with the fee and receipt, and advance().
+  GUI: zone prices, chooseSpace() (cheapest space) and the
+  receipt with member discounts.
+
+Member 3 - Menu, input and testing
+  Console: search(), the main() menu loop and input validation
+  (cin.fail, cin.clear, cin.ignore), testing, presentation slides.
+  GUI: the MemberList class, the Memberships tab (pick, Apply,
+  remove), and testing.
